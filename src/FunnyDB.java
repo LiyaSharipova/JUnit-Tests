@@ -22,7 +22,7 @@ public class FunnyDB  {
         ResultSet rs = mock(ResultSet.class);
         when(st.executeQuery(anyString())).thenReturn(rs);
         when(rs.next()).thenReturn(true, true, true, false);
-        when(rs.getString("id")).thenReturn("1", "2", "3");
+//        when(rs.getString("id")).thenReturn("1", "2", "3");
         when(rs.getString("name")).thenReturn("Nail", "Alex", "Liya");
         return conn;
     }
